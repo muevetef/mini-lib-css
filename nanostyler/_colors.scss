@@ -5,4 +5,25 @@
   .bg-#{$key} {
     background-color: $val;
   }
+
+  @if ($val != #000 and $val != #fff) {
+    //variantes luminosidad claro
+    @for $i from 1 through 9 {
+      .text-#{$key}-light-#{$i} {
+        color: mix(white, $val, $i * 10%);
+      }
+      .bg-#{$key}-light-#{$i} {
+        background-color: mix(white, $val, $i * 10%);
+      }
+    }
+    //variantes luminosidad oscuro
+    @for $i from 1 through 9 {
+      .text-#{$key}-dark-#{$i} {
+        color: mix(black, $val, $i * 10%);
+      }
+      .bg-#{$key}-dark-#{$i} {
+        background-color: mix(black, $val, $i * 10%);
+      }
+    }
+  }
 }

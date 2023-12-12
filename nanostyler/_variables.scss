@@ -21,6 +21,7 @@ $colors: (
   "white": #fff,
 );
 
+// @debug map-get($colors, "red") == #e61919;
 // @debug map-get($colors, "red");
 // @debug map-has-key($colors, "violet");
 // $colors2: map-remove($colors, "primary");
