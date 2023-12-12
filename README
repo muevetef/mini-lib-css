@@ -1,11 +1,13 @@
 ## Instalación
 
 Tener instalado nodejs y npm (LTS) https://nodejs.org/en
+
 ```
-npm init
+npm install
 ```
 
-Arrancar gulp: 
+Arrancar gulp:
+
 ```
 npm run gulp
 ```
