@@ -27,11 +27,116 @@ img {
   max-width: 100%;
 }
 
+.text-primary {
+  color: #326dee;
+}
+
+.-primary {
+  color: #326dee;
+}
+
+.text-secondary {
+  color: #1ac886;
+}
+
+.-secondary {
+  color: #1ac886;
+}
+
+.text-error {
+  color: #d32752;
+}
+
+.-error {
+  color: #d32752;
+}
+
+.text-info {
+  color: #f6c31c;
+}
+
+.-info {
+  color: #f6c31c;
+}
+
+.text-blue {
+  color: #1919e6;
+}
+
+.-blue {
+  color: #1919e6;
+}
+
+.text-red {
+  color: #e61919;
+}
+
+.-red {
+  color: #e61919;
+}
+
+.text-yellow {
+  color: #e6e619;
+}
+
+.-yellow {
+  color: #e6e619;
+}
+
+.text-green {
+  color: #19e635;
+}
+
+.-green {
+  color: #19e635;
+}
+
+.text-orange {
+  color: #ffa600;
+}
+
+.-orange {
+  color: #ffa600;
+}
+
+.text-purple {
+  color: #9900ff;
+}
+
+.-purple {
+  color: #9900ff;
+}
+
+.text-grey {
+  color: #808080;
+}
+
+.-grey {
+  color: #808080;
+}
+
+.text-black {
+  color: #000;
+}
+
+.-black {
+  color: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.-white {
+  color: #fff;
+}
+
 .card {
   display: block;
   padding: 0.75rem;
   border: 1px;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 .card-title {
   font-size: 1rem;

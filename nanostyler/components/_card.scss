@@ -1,8 +1,11 @@
+@use "sass:math";
+
 .card {
   display: block;
   padding: $base-padding;
   border: $base-border-thickness;
   box-shadow: $base-box-shadow;
+  border-radius: math.div($base-border-radius, 4);
 
   &-title {
     font-size: $base-font-size;
@@ -17,3 +20,8 @@
     }
   }
 }
+
+// @debug math.div($base-border-radius, 4);
+// @debug "Hola esto es sassssss!";
+// @debug math.$pi;
+// @debug math.min(2px, -1px, 3px, 45px, 6px, -7px, -34px);

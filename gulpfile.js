@@ -2,13 +2,13 @@ const {src, dest, watch, series} = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
 
 function buildStyles(){
-    return src('nanostyler/*.scss')
-        .pipe(sass())
+    return src('nanostyler/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
         .pipe(dest('dist/css'))
 }
 
 function watchTask(){
-    watch(['nanostyler/*.scss'], buildStyles)
+    watch(['nanostyler/**/*.scss'], buildStyles)
 }
 
 
