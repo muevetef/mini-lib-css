@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @mixin btn($bg-color: #e2e2e2) {
   text-decoration: none;
   cursor: pointer;
@@ -5,7 +7,7 @@
   border: 0;
   padding: $base-padding $base-padding * 2;
   border-radius: $base-border-radius;
-  background-color: $bg-bolor;
+  background-color: $bg-color;
 }
 
 .btn {
@@ -14,9 +16,15 @@
 @each $key, $val in $colors {
   .btn-#{$key} {
     @include btn($val);
+    &:hover {
+      background-color: color.scale($val, $lightness: 30%);
+    }
   }
   .btn-outlined-#{$key} {
     @include btn(#fff);
     border: $base-border-thickness solid $val;
+    &:hover {
+      background-color: $val;
+    }
   }
 }
