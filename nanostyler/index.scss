@@ -4,6 +4,8 @@
 
 //base y el layout
 @import "base";
+@import "breakpoints";
+@import "grid";
 
 //componentes (button, card, navbar...
 @import "components/card";
